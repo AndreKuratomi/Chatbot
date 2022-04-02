@@ -13,7 +13,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+
   <body>
+    <!-- CHAT BAR BLOCK -->
     <section class="chat-bar-collapsible">
       <header>
         <button id="chat-bar-button" type="button" class="collapsible">
@@ -25,6 +27,56 @@
           ></i>
         </button>
       </header>
+
+      <main class="content">
+        <article class="full-chat-block">
+          <!--Message container-->
+          <div class="outer-container">
+            <div class="chat-container">
+              <!--Messages-->
+              <div id="chatbox">
+                <h5 id="chat-timestamp"></h5>
+                <p id="botStarterMessage" class="botText">
+                  <span>Loading...</span>
+                </p>
+              </div>
+
+              <!--User input box-->
+              <div class="chat-bar-input-block">
+                <div id="userInput">
+                  <input
+                    id="textInput"
+                    class="input-box"
+                    type="text"
+                    name="msg"
+                    placeholder="Tap 'Enter' to send a message"
+                  />
+                  <p></p>
+                </div>
+
+                <div class="chat-bar-icons">
+                  <i
+                    id="chat-icon"
+                    style="color: crimson"
+                    class="fa fa-fw fa-heart"
+                    onclick="heartButton()"
+                  ></i>
+                  <i
+                    id="chat-icon"
+                    style="color: #333"
+                    class="fa fa-fw fa-send"
+                    onclick="sendButton()"
+                  ></i>
+                </div>
+
+                <div id="chat-bar-buttom">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
     </section>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
