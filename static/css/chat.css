@@ -3,6 +3,8 @@
   bottom: 0;
   right: 50px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+  animation: floatup 0.5s forwards;
 }
 
 .collapsible {
@@ -147,5 +149,16 @@
   max-width: 80%;
   margin-left: 10px;
   /* floatup?? */
-  animation: floatup 0.5s forwards;
+  animation: floatup 0.9s forwards;
+}
+
+@keyframes floatup {
+  from {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
