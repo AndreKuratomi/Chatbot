@@ -25,12 +25,12 @@
   justify-content: space-between;
 }
 
-/* .content {
+.content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
-} */
+}
 
 .full-chat-block {
   width: 350px;
@@ -84,6 +84,15 @@
   font-size: 20px;
 }
 
+#chat-icon1 {
+  color: #fff;
+}
+#chat-icon2 {
+  color: crimson;
+}
+#chat-icon3 {
+  color: #333;
+}
 #chat-icon:hover {
   cursor: pointer;
   opacity: 0.7;
@@ -148,7 +157,6 @@
   border-bottom-left-radius: 2px;
   max-width: 80%;
   margin-left: 10px;
-  /* floatup?? */
   animation: floatup 0.9s forwards;
 }
 
@@ -164,9 +172,16 @@
 }
 
 @media screen and (max-width: 600px) {
+  .content {
+  }
+
   .full-chat-block {
     width: 70%;
     /* border-radius: 0px; */
+  }
+
+  .outer-container {
+    min-height: 260px;
   }
 
   .chat-bar-collapsible {
