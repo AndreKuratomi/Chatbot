@@ -39,10 +39,9 @@
   overflow: auto;
   scrollbar-width: none;
   height: max-content;
-  /* max-height não funciona */
   transition: max-height 0.2s ease-out;
 }
-/* o que faz exatamente? */
+
 .outer-container {
   min-height: 500px;
   bottom: 0%;
@@ -177,7 +176,6 @@
 
   .full-chat-block {
     width: 70%;
-    /* border-radius: 0px; */
   }
 
   .outer-container {
@@ -193,8 +191,6 @@
 
   .collapsible {
     width: 70%;
-    /* border: 0px; */
     border-top: 3px solid white;
-    /* border-radius: px 0px 0px 0px; */
   }
 }

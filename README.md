@@ -58,7 +58,7 @@ code .
 
 <p>Basta clicar no link abaixo:</p>
 
-(link)
+https://chatbot-abk.vercel.app/
 
 # Documentação
 
