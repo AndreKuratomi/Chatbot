@@ -162,3 +162,24 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .full-chat-block {
+    width: 70%;
+    /* border-radius: 0px; */
+  }
+
+  .chat-bar-collapsible {
+    position: fixed;
+    bottom: 0;
+    left: 90px;
+    width: 100%;
+  }
+
+  .collapsible {
+    width: 70%;
+    /* border: 0px; */
+    border-top: 3px solid white;
+    /* border-radius: px 0px 0px 0px; */
+  }
+}
