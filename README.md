@@ -2,6 +2,7 @@
 
 - [Sobre](#sobre)
 - [Instalação](#instalação)
+- [Utilização](#utilização)
 - [Documentação](#documentação)
 - [Termos de uso](#termos-de-uso)
 
@@ -9,7 +10,7 @@
 
 # Sobre
 
-<p>A aplicação Chatbot é uma simples e se propõe a cadastrar médicos e pacientes na plataforma possibilitando o agendamento de consultas de maneira simples e intuitiva, além de fazer a gestão de consultas agendadas e a da lista de espera.</p>
+<p>Chatbot é um simples exercício de elaboração de um chat no frontend. Este utiliza HTML5, CSS3 e Javascript puro.</p>
 <br>
 
 # Instalação
@@ -25,7 +26,7 @@ git init
 ```
 
 <br>
-<h5>1. Fazer o clone do reposítório <span style="text-decoration: underline">Anagramas2</span> na sua máquina pelo terminal do computador ou pelo do IDE:</h5>
+<h5>1. Fazer o clone do reposítório <strong>Chatbot</strong> na sua máquina pelo terminal do computador ou pelo do IDE:</h5>
 
 ```
 git clone https://github.com/AndreKuratomi/Chatbot.git
@@ -61,12 +62,12 @@ code .
 
 # Documentação
 
-Este exercício é na verdade uma reprodução do chatbot feito por Federico Cotogno:
+Este exercício é na verdade uma reprodução do chatbot feito por Federico Cotogno, com algumas alterações:
 https://github.com/federicocotogno/mscbot
 
-E seu canal de youtube:
+Seu canal de youtube:
 https://www.youtube.com/c/CodePalace
 
 # Termos de uso
 
-Esse projeto atende a fins exclusivamente didáticos e sem nenhum intuito comercial.
+Esse exercício atende a fins exclusivamente didáticos e sem nenhum intuito comercial.
