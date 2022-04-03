@@ -6,6 +6,7 @@ for (let i = 0; i < coll.length; i++) {
     this.classList.toggle("active");
 
     const content = this.nextElementSibling;
+    console.log(content);
 
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
@@ -35,7 +36,7 @@ const getTime = () => {
 
 // Gets the first message
 const firstBotMessage = () => {
-  let firstMessage = "Qual das nossas modalidades gostaria de pesquisar?";
+  let firstMessage = "Qual de nossas modalidades gostaria de pesquisar?";
   window.document.getElementById("botStarterMessage").innerHTML =
     '<p class="botText"><span>' + firstMessage + "</span></p>";
 
@@ -50,7 +51,7 @@ firstBotMessage();
 // Retrieves the response
 const getHardResponse = (userText) => {
   let botResponse = getBotResponse(userText);
-  let botHtml = '<p class="botText"><spam>' + botResponse + "</span></p>";
+  let botHtml = '<p class="botText"><span>' + botResponse + "</span></p>";
   $("#chatbox").append(botHtml);
 
   window.document.getElementById("chat-bar-bottom").scrollIntoView(true);
@@ -61,7 +62,7 @@ const getResponse = () => {
   let userText = $("#textInput").val();
 
   if (userText == "") {
-    userText = "Paranawê da Preula!";
+    userText = "Não sei por onde começar...";
   }
 
   let userHtml = '<p class="userText"><span>' + userText + "</span></p>";
@@ -84,17 +85,16 @@ const buttonSendText = (sampleText) => {
   window.document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
   //   Uncomment this if you want the bot to respond to this buttonSendText event
-  //   setTimeout(() => {
-  //     getHardResponse(sampleText);
-  //   }, 1000);
+  setTimeout(() => {
+    getHardResponse(sampleText);
+  }, 1000);
 };
 
 const sendButton = () => {
-  console.log("oi");
   getResponse();
 };
 const heartButton = () => {
-  buttonSendText("Heart clicked!");
+  buttonSendText("Adorei!");
 };
 
 // Press enter to send a message
